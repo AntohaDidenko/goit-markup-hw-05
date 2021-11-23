@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/modal.js">
 </head>
 <body>
     <!--content header-->
@@ -46,7 +47,7 @@
             <section class="hero">
                 <div class="container">
                     <h1 class="header-hero">Эффективные решения <br> для вашего бизнеса</h1>
-                    <button type="button" class="button">Заказать услугу</button>
+                    <button type="button" class="button" data-modal-open>Заказать услугу</button>
                 </div>
             </section>
             <!--our peculiarities-->
@@ -324,5 +325,16 @@
             </div>
         </div>
     </footer>
+    <!-- Модалка -->
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="button-close" data-modal-close>
+                <svg class="button-close-svg" width="18" height="18">
+                    <use href="./images/close-button.svg#icon-close-button"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
